@@ -61,5 +61,18 @@ describe('items routes', () => {
         });
       });
   });
+
+  it('can delete item by index', () => {
+    return request(app)
+      .delete('/api/v1/items/0')
+      .then(res => {
+        expect(res.body).toEqual({
+          fruit:'shmanana',
+          color:'shmyellow',
+          amount:300,
+          price:'$3000'
+        });
+      });
+  });
 });
 
