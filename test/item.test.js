@@ -41,7 +41,7 @@ describe('items routes', () => {
       });
   });
 
-  it('updetes item with PUT', () => {
+  it('updates item with PUT', () => {
     const newItem = {
       fruit:'shmanana',
       color:'shmyellow',
